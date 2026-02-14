@@ -38,7 +38,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -61,6 +61,12 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Word</AssemblyReference>
       <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="1119,2085" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -94,7 +100,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:FileExistsX DisplayName="File Exists" Exists="[bool_CertificateExists]" sap:VirtualizedContainerService.HintSize="1001,132" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[&quot;C:\Users\matti\Desktop\Certificates\Certificate_&quot; + Student(&quot;Name&quot;).ToString + &quot;.docx&quot;]" />
+            <ui:FileExistsX DisplayName="File Exists" Exists="[bool_CertificateExists]" sap:VirtualizedContainerService.HintSize="1001,132" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[&quot;C:\Users\matti\Desktop\Certificates\Certificate_&quot; + Student(&quot;Name&quot;).ToString + &quot;.pdf&quot;]" />
             <If Condition="[bool_CertificateExists = False]" sap:VirtualizedContainerService.HintSize="1001,1482" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="580,1324" sap2010:WorkflowViewState.IdRef="Sequence_4">
